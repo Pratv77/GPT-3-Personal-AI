@@ -21,7 +21,3 @@ I Want To Learn (IW2L) is an online platform that utilizes the GPT-3 engine to g
 ## Getting Started
 
 To get started with I Want To Learn (IW2L), simply visit the website and input the skill you want to learn. The platform will generate a comprehensive guide on how to acquire the skill, covering all the necessary steps and resources. The guides are generated in a clear and easy-to-follow format and are constantly updated to ensure relevance and accuracy.
-
-## Contributing
-
-This project is mainly for practice, so if you see any areas for improvement or if you would like to contribute, please submit a pull request.
