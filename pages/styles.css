@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
 }
 
 .root {
@@ -45,7 +46,12 @@ body {
 
 .header-title {
     display: flex;
+    flex-direction: column;
     gap: 12px;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .header-title h1 {
@@ -117,6 +123,9 @@ textarea {
     font-family: 'Manrope', sans-serif;
 }
 
+.subtitle-text {
+    text-align: center;
+}
 
 .prompt-box:focus {
     border-color:rgba(255, 255, 255, 0.75)
@@ -172,7 +181,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(17, 91, 252);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -245,9 +254,8 @@ textarea {
 }
 
 .badge img {
-    width: 21px;
-    height: 17px;
-    image-rendering: pixelated;
+    width: 30px;
+    height: 30px;
     flex-shrink: 0;
     fill: black;
     color: black;

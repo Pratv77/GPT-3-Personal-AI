@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import buildspaceLogo from "../assets/buildspace-logo.png";
+import buildspaceLogo from "../assets/image.png";
 import { useState } from "react";
 
 const Home = () => {
@@ -28,29 +28,30 @@ const Home = () => {
     setIsGenerating(false);
   };
 
+  
+
   const onUserChangedText = (event) => {
     setUserInput(event.target.value);
   };
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>IW2L | Pratv7</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Unlock Your Best Self with AI-Powered Guidance</h1>
+            <h1>I Want To Learn...</h1>
           </div>
           <div className="header-subtitle">
-            <h2>
-              Transform Your Life with Personalized Advice... from Sheldon
-              Cooper
+            <h2 className="subtitle-text">
+            Starting is often the hardest part, so we'll help point you in the right direction for <span class="bold">any skill</span> you want to learn.
             </h2>
           </div>
         </div>
         <div className="prompt-container">
           <textarea
-            placeholder="I want advice about..."
+            placeholder="I want to learn about..."
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
@@ -87,13 +88,12 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://github.com/Pratv77"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <Image src={buildspaceLogo}/>
           </div>
         </a>
       </div>
